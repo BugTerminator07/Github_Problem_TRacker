@@ -4,8 +4,57 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Github Issue Tracker</title>
+    <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
+    <!-- font -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+<!-- font awesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+<!-- tailwind and daisyUI -->
+ <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="stylesheet" href="style.css">
+<!-- font -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- login page -->
     
+<div class="form pt-10">
+<div class="card bg-base-100 w-full max-w-md shrink-0 shadow mx-auto rounded-2xl ">
+    <div class="logo w-[120px] mx-auto pt-32 align-center mb-10">
+    <img src="assets/github-logo.png" alt="Github Logo">
+</div>
+<div class="logo-text text-center space-y-4">
+    <h1 class="text-2xl font-bold">Github Issue Tracker</h1>
+    <p class="text-neutral font-medium">Sign to manage your issues </p>
+</div>
+      <div class="card-body items-left">
+        <fieldset class="fieldset">
+          <label class="label text-neutral font-bold">Username</label>
+          <input id="input-number" maxlength="20" minlength="3" type="text" class="input  bg-base-200 w-full " placeholder="Enter Username" />
+          <p class="text-blue-400 font-semibold text-sm">Default: admin</p>
+         <br>
+          <label class="label text-neutral font-bold">Password</label>
+          <input id="input-pin" maxlength="20" minlength="3" type="password" class="input  bg-base-200 w-full" placeholder="Please Enter Your Password" />
+          <p class="text-blue-400 font-semibold text-sm">Default: admin123</p>
+          <div><a class="link link-hover mt-5" href="https://youtu.be/Zm4FMw_zD7Y?si=a1tjuyAM5Gl-Xq5J" target="_blank">Forgot Password? (WTF you Dumb! click here)</a></div>
+          <button id="login-btn" class="btn btn-primary mt-4 ">Login</button>
+        </fieldset>
+      </div>
+      <p class="text-center text-2xl text-[lightgreen]">------------------ <span class="font-bold text-[Gray]">Or</span> -------------------</p>
+    <p class="text-center text-[lightgray]">Demo Credentials:</p>
+      <div class="mx-auto my-10 lg:w-4/5 w-full bg-base-200 text-center rounded-lg p-4 mt-10 h-[150px]">
+        <p class="text-xl text-[lightblue]">Username: <span class="font-bold text-[lightgreen]">admin</span></p>
+        <p class="text-xl text-[lightblue]">Password: <span class="font-bold text-[lightgreen]">admin123</span></p>
+      </div>
+    </div>
+  </div>
+
+
+    <script src="function.js"></script>
 </body>
 </html>
