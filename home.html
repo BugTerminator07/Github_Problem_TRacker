@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Github Issue Tracker</title>
     <link rel="shortcut icon" href="assets/github-logo.png" type="image/x-icon">
     <!-- font -->
@@ -17,30 +18,29 @@
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
-</head>
-<body>
+</head> 
+<body class="bg-[#F8FAFC] min-h-screen">
     <!-- navbar -->
-    <div class="navbar bg-base-100 shadow-sm">
-        
-        <div class="w-[100px] h-[100px]  ">
-        <img src="assets/github-logo.png"  alt="">
-        </div>
-  <div class="flex-1">
-    <a class="btn btn-ghost text-xl">Github Issue Tracker</a>
+    <div class="navbar bg-base-100 shadow-sm flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2 p-8">
+  <!-- Logo -->
+  <div class="flex items-center justify-center sm:justify-start">
+    <img src="assets/github-logo.png" alt="Logo" class="w-16 h-16 sm:w-20 sm:h-20">
+    <span class="ml-2 text-xl font-bold">Github Issue Tracker</span>
   </div>
-  <div class="flex gap-2">
-    <input type="text" placeholder="Search issues..." class="input input-bordered w-24 md:w-auto" />
-    
-        
-       <button class="btn btn-primary"><i class="fa-solid fa-plus"></i> New Issue</button>
-      
-      
-    </div>
+
+  <!-- Search + Button -->
+  <div class="flex flex-col sm:flex-row gap-2 w-full sm:w-auto">
+    <input type="text" placeholder="Search issues..." 
+           class="input input-bordered w-full sm:w-auto" />
+    <button class="btn btn-primary w-full sm:w-auto">
+      <i class="fa-solid fa-plus"></i> New Issue
+    </button>
+  </div>
 </div>
-<div class="select-button flex justify-start gap-3 mt-15 mx-auto w-full lg:w-4/5 shadow-sm p-8 bg-base-100 rounded-lg">
-    <button class="btn all-btn btn-outline text-[gray] w-[100px]">All</button>
-    <button class="btn open-btn btn-outline text-[gray] w-[100px]">Open</button>
-    <button class="btn closed-btn btn-outline text-[gray] w-[100px]">Closed</button>
+<div class="select-button flex justify-start gap-3 mt-15 mx-auto w-full lg:w-7/8 shadow-sm p-8 bg-base-100 rounded-lg">
+    <button class="btn all-btn btn-outline text-[gray] max-w-md">All</button>
+    <button class="btn open-btn btn-outline text-[gray] max-w-md">Open</button>
+    <button class="btn closed-btn btn-outline text-[gray] max-w-md">Closed</button>
 
 </div>
 
